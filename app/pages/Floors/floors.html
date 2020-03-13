@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roi test</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800|Open+Sans:600|Roboto&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__heading">Выберите свою квартиру</h1>
+      </header>
+      <main class="main">
+        <div class="navigation">
+          <h3 class="navigation__heading">Вы выбрали:</h3>
+          <div class="navigation__selected mobile-block">
+            <div class="selected-section">Секция 4</div>
+            <div class="selected-floor">14 этаж</div>
+          </div>
+          <div class="navigation__selected--mobile mobile-viwe">
+            <div class="choice-text"></div>
+            <div class="selected-section">VI секция</div>
+            <div class="selected-floor">14 этаж</div>
+            <div class="selected-layout">№124214124</div>
+          </div>
+          <div class="navigation__steps">
+            <nav class="steps__nav">
+              <ul class="steps__buttons mobile-block">
+                <li class="steps__button button--step"><a href="/pages/Houses/houses.html">Выберите секцию</a></li>
+                <li class="steps__button button--step"><a href="/pages/Floors/floors.html">Выберите этаж</a></li>
+                <li class="steps__button button--step"><a href="/pages/Layout/layout.html">Выберите планировку</a></li>
+                <li class="steps__button button--step"><a href="/pages/Selection/selection.html">Выберите квартиру</a></li>
+              </ul>
+              <ul class="steps__buttons--mobile mobile-viwe">
+                <li class="steps__button button--step-mobile"><a href="/pages/Houses/houses.html">Секции</a></li>
+                <li class="steps__button button--step-mobile"><a href="/pages/Floors/floors.html">Этаж</a></li>
+                <li class="steps__button button--step-mobile"><a href="/pages/Layout/layout.html">План</a></li>
+                <li class="steps__button button--step-mobile"><a href="/pages/Selection/selection.html">Квартира</a></li>
+              </ul>
+            </nav>
+            <div class="steps__step mobile-block">Шаг&nbsp;<span id="step">2</span>/4</div>
+          </div>
+        </div>
+        <div class="select-content">
+          <div class="dynamic-content" id="dynamic">
+            <div class="floors">
+              <div class="floors__list mobile-block">
+                <div class="floor">1 этаж</div>
+                <div class="floor">2 этаж</div>
+                <div class="floor">3 этаж</div>
+                <div class="floor">4 этаж</div>
+                <div class="floor">5 этаж</div>
+                <div class="floor">6 этаж</div>
+                <div class="floor">7 этаж</div>
+                <div class="floor">8 этаж</div>
+                <div class="floor">9 этаж</div>
+                <div class="floor">10 этаж</div>
+                <div class="floor">11 этаж</div>
+                <div class="floor">12 этаж</div>
+                <div class="floor">13 этаж</div>
+                <div class="floor">14 этаж</div>
+                <div class="floor floor--anyway">Не имеет значения</div>
+              </div>
+              <div class="floors__list--mobile mobile-viwe">
+                <div class="floor--mobile">1 этаж</div>
+                <div class="floor--mobile">2 этаж</div>
+                <div class="floor--mobile">3 этаж</div>
+                <div class="floor--mobile">4 этаж</div>
+                <div class="floor--mobile">5 этаж</div>
+                <div class="floor--mobile">6 этаж</div>
+                <div class="floor--mobile">7 этаж</div>
+                <div class="floor--mobile">8 этаж</div>
+                <div class="floor--mobile">9 этаж</div>
+                <div class="floor--mobile">10 этаж</div>
+                <div class="floor--mobile">11 этаж</div>
+                <div class="floor--mobile">12 этаж</div>
+                <div class="floor--mobile">13 этаж</div>
+                <div class="floor--mobile">14 этаж</div>
+                <div class="floor--mobile floor--anyway">Не важно</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-buttons"><a class="button button--left">Назад
+            <svg id="arrow--left" width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 24L3 13L15 2" stroke="#E2E2E2" stroke-width="4"></path>
+            </svg></a><a class="button button--right">Далее
+            <svg id="arrow--right" width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L14 13L2 24" stroke="white" stroke-width="4"></path>
+            </svg></a></div>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/logic.js"></script>
+  </body>
+</html>

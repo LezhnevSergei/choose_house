@@ -1,0 +1,12 @@
+extends ../../index
+
+block vars
+    - var step = '1'
+    - var pageTitle = 'Выберите нужную вам секцию'
+
+block houses
+    .houses__decorate.mobile-block
+        include ../../templates/houses-decorate
+
+    .houses
+        include ../../templates/houses

@@ -1,0 +1,39 @@
+.navigation
+    h3.navigation__heading #{pageTitle}
+
+    .navigation__selected.mobile-block
+        .selected-section Секция 4
+        .selected-floor 14 этаж
+    .navigation__selected--mobile.mobile-viwe
+        .choice-text
+        .selected-section VI секция
+        .selected-floor 14 этаж
+        .selected-layout №124214124
+
+
+    .navigation__steps
+        nav.steps__nav
+            ul.steps__buttons.mobile-block
+                li.steps__button.button--step
+                    a(href='/pages/Houses/houses.html') Выберите секцию
+                li.steps__button.button--step
+                    a(href='/pages/Floors/floors.html') Выберите этаж
+                li.steps__button.button--step
+                    a(href='/pages/Layout/layout.html') Выберите планировку
+                li.steps__button.button--step
+                    a(href='/pages/Selection/selection.html') Выберите квартиру
+            ul.steps__buttons--mobile.mobile-viwe
+                li.steps__button.button--step-mobile
+                    a(href='/pages/Houses/houses.html') Секции
+                li.steps__button.button--step-mobile
+                    a(href='/pages/Floors/floors.html') Этаж
+                li.steps__button.button--step-mobile
+                    a(href='/pages/Layout/layout.html') План
+                li.steps__button.button--step-mobile
+                    a(href='/pages/Selection/selection.html') Квартира
+
+        .steps__step.mobile-block
+            | Шаг&nbsp;
+            span#step #{step}
+            | /4
+

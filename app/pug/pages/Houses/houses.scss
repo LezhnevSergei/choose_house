@@ -1,0 +1,319 @@
+.houses {
+    position: absolute;
+    right: 21px;
+    bottom: -60px;
+
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    border-right: none;
+    border-bottom: none;
+
+    width: 638.26px;
+    height: 374.83px;
+
+    stroke: #415EB7;
+
+    fill: #FFFFFF;
+
+    outline: none;
+
+    @media (max-width: $breakpoint-lg) {
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+
+        padding: 0;
+
+        margin-top: 30px;
+
+        border: none;
+        transform: translate(-50%, -51%) scale(0.8, 0.9);
+
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        transform: translate(-50%, -62%) scale(0.45, 0.5);
+
+        margin-top: 0;
+    }
+
+
+
+    #house-1 {
+        cursor: pointer;
+        position: absolute;
+
+        left: 158px;
+        top: 31px;
+
+        $width: 232px;
+        $height: 105px;
+
+        width: $width;
+        height: $height;
+
+        transform: scale(0.97);
+
+
+        viewBox:0 0 $width $height;
+
+        @media (max-width: $breakpoint-lg) {
+            left: 181px;
+            top: 0;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 176px;
+            top: 0;
+
+            transform: scale(1.2);
+        }
+
+        .house-number {
+            transform: translate(48.4%, 39%);
+        }
+
+
+        &:hover {
+            fill: #5680FF;
+            stroke: #5680FF;
+
+            .house-number {
+                fill: #FFFFFF;
+            }
+
+        }
+    }
+    #house-2 {
+        cursor: pointer;
+        position: absolute;
+        left: 381px;
+        top: 29.5px;
+        width: 175px;
+        height: 112px;
+        transform: scale(0.97);
+
+        @media (max-width: $breakpoint-lg) {
+            left: 404px;
+            top: 0;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 445px;
+            top: 0;
+
+            transform: scale(1.2);
+        }
+
+        .house-number {
+            transform: translate(44%, 38%);
+        }
+
+        &:hover {
+            fill: #5680FF;
+            stroke: #5680FF;
+
+            .house-number {
+                fill: #FFFFFF;
+            }
+
+        }
+    }
+    #house-3 {
+        cursor: pointer;
+        position: absolute;
+
+        right: 104px;
+        top: 128px;
+
+        $width: 94px;
+        $height: 213px;
+
+        transform: scale(0.97);
+
+
+        width: $width;
+        height: $height;
+        viewBox:0 0 $width $height;
+
+        @media (max-width: $breakpoint-lg) {
+            left: 465px;
+            top: 98px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 511px;
+            top: 133px;
+
+            transform: scale(1.2);
+        }
+
+        .house-number {
+            transform: translate(30%, 43%);
+        }
+
+        &:hover {
+            fill: #5680FF;
+            stroke: #5680FF;
+
+            .house-number {
+                fill: #FFFFFF;
+            }
+
+        }
+    }
+    #house-4 {
+        cursor: pointer;
+        position: absolute;
+
+        left: 56px;
+        top: 207px;
+
+        $width: 133px;
+        $height: 134px;
+
+        transform: scale(0.97);
+
+
+        width: $width;
+        height: $height;
+
+        viewBox:0 0 $width $height;
+
+        @media (max-width: $breakpoint-lg) {
+            left: 67px;
+            top: 173px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 20px;
+            top: 233px;
+
+            transform: scale(1.2);
+        }
+
+        .house-number {
+            transform: translate(36%, 41%);
+        }
+
+        &:hover {
+            fill: #5680FF;
+            stroke: #5680FF;
+
+            .house-number {
+                fill: #FFFFFF;
+            }
+
+        }
+    }
+
+    .house-number {
+        fill: #415EB7;
+        stroke: none;
+    }
+
+    #house-anonim {
+        position: absolute;
+
+        stroke: #E2E2E2;
+
+        top: 40px;
+        left: 60px;
+
+        $width: 92px;
+        $height: 164px;
+
+        transform: scale(0.97);
+
+        width: $width;
+        height: $height;
+
+        viewBox:0 0 $width $height;
+
+        @media (max-width: $breakpoint-lg) {
+            left: 72px;
+            top: 6px;
+
+            fill: #F3F3F3;
+            stroke: none;
+            border: none;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 20px;
+            top: 12px;
+
+            transform: scale(1.2);
+        }
+    }
+
+    #compass {
+        position: absolute;
+
+        top: 147px;
+        left: 201px;
+
+        transform: scale(0.97);
+
+
+        stroke: none;
+        opacity: 0.5;
+
+        @media (max-width: $breakpoint-lg) {
+            left: 221px;
+            top: 119px;
+
+            transform: scaleX(1.05);
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            left: 226px;
+            top: 154px;
+
+            transform: scale(1.2);
+        }
+    }
+}
+
+.houses__decorate {
+    stroke: none;
+
+    #horizontal {
+        position: absolute;
+        top: 50px;
+        left: 14px;
+        transform: scaleX(0.97);
+
+    }
+
+    #horizontal-text {
+        position: absolute;
+        top: 108px;
+        left: 360px;
+        transform: scale(0.97);
+    }
+
+    #vertical {
+        position: absolute;
+        transform: rotate(-90deg) scaleX(0.49);
+        top: 340px;
+        left: -369px;
+    }
+
+    #vertical-text {
+        position: absolute;
+        top: 246px;
+        left: 70px;
+        transform: scale(0.97);
+    }
+}
+
+.house--selected {
+    fill: #415EB7 !important;
+    stroke: #415EB7;
+
+    .house-number {
+        fill: #FFFFFF !important;
+    }
+}

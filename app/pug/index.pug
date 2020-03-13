@@ -1,0 +1,15 @@
+extends base
+
+block vars
+
+block main
+    main.main
+        include templates/navigation
+        .select-content
+            #dynamic.dynamic-content
+                block houses
+                block floors
+                block layout
+                block selection
+        include templates/mobile-buttons
+

@@ -1,0 +1,212 @@
+.floors {
+    max-width: 800px;
+    margin-top: 55px;
+
+    @media (max-width: $breakpoint-lg) {
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+        margin-top: 0px;
+    }
+
+    &__list {
+        display: flex;
+
+        width: inherit;
+        flex-wrap: wrap;
+
+        max-width: 800px;
+
+        margin: 0 auto;
+
+
+        .floor {
+
+            width: 183px;
+            min-height: 86px;
+
+            padding: 33px 0;
+            margin-bottom: 10px;
+            margin-right: 14px;
+
+            border: 1px solid #AFAFAF;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            background-color: transparent;
+
+            cursor: pointer;
+
+            text-align: center;
+            vertical-align: middle;
+
+            font-family: $font-OpenSans;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 150%;
+
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            color: #828282;
+
+            //margin-right: 16px;
+            //margin-bottom: 10px;
+
+            //&:nth-child(4n) {
+            //    margin-right: 0;
+            //}
+
+            @media (max-width: $breakpoint-lg) {
+                display: none;
+            }
+            
+            &:hover {
+                border: none;
+                color: #909090;
+            }
+            
+            &:active {
+                background-color: #415EB7;
+                color: #FFFFFF;
+            }
+
+            &--selected {
+                width: 183px;
+                min-height: 86px;
+
+                padding: 33px 0;
+                margin-bottom: 10px;
+                margin-right: 14px;
+
+                border: 1px solid #AFAFAF;
+                box-sizing: border-box;
+                border-radius: 3px;
+
+                cursor: pointer;
+
+                text-align: center;
+                vertical-align: middle;
+
+                font-family: $font-OpenSans;
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 150%;
+
+                text-align: center;
+                letter-spacing: 0.03em;
+
+                background-color: #415EB7;
+                color: #FFFFFF;
+            }
+
+
+            &--anyway{
+                flex-grow: 1;
+            }
+        }
+    }
+
+    &__list--mobile {
+        display: flex;
+
+        width: inherit;
+        flex-wrap: wrap;
+
+        max-width: 800px;
+
+        margin: 0 auto;
+
+        @media (max-width: $breakpoint-lg) {
+            margin: 0 auto;
+            width: 285px;
+            justify-content: space-between;
+            transform: scale(1.4);
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            transform: scale(1);
+
+        }
+
+
+        .floor--mobile {
+
+            width: 93px;
+            height: 38px;
+
+            padding: 11px 0;
+            margin-bottom: 5px;
+            margin-right: 0px;
+
+            border: 1px solid #AFAFAF;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            background-color: transparent;
+
+            cursor: pointer;
+
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150%;
+
+            font-family: $font-OpenSans;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 150%;
+
+            text-align: center;
+            letter-spacing: 0.03em;
+
+            color: #909090;
+
+            &:hover {
+                border: none;
+            }
+
+            &:active {
+                background-color: #415EB7;
+                color: #FFFFFF;
+            }
+
+            &--selected {
+                width: 93px;
+                height: 38px;
+
+                padding: 11px 0;
+                margin-bottom: 5px;
+                margin-right: 0px;
+
+                border: 1px solid #AFAFAF;
+                box-sizing: border-box;
+                border-radius: 3px;
+
+                cursor: pointer;
+
+                text-align: center;
+                vertical-align: middle;
+                line-height: 150%;
+
+                font-family: $font-OpenSans;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 0.03em;
+
+                background-color: #415EB7;
+                color: #FFFFFF;
+
+            }
+
+
+            &--anyway{
+                flex-grow: 1;
+            }
+        }
+    }
+
+
+}
+

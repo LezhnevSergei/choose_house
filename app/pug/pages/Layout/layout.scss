@@ -1,0 +1,107 @@
+.plan {
+    position: absolute;
+    margin-top: 80px;
+
+    width: 792px;
+    height: 401px;
+    //
+    //left: 50%;
+    //top: 50%;
+
+    @media (min-width: $breakpoint-lg) and (max-width: 1245px) {
+        transform: scale(0.7);
+        left: -120px;
+    }
+
+    @media (max-width: $breakpoint-lg){
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        transform: scale(0.5) translate(-100%, 0%);
+    }
+
+    @media (max-width: $breakpoint-sm){
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        transform: scale(0.35) translate(-142%, -20%);
+    }
+    //transform: translate(-50%, -50%);
+
+
+    .room {
+        width: 138px;
+        height: 188px;
+
+        cursor: pointer;
+    }
+
+    #room-1 {
+        position: absolute;
+
+        top: 0;
+        left: 105px;
+    }
+
+    #room-2 {
+        position: absolute;
+
+        top: 0;
+        left: 244px;
+    }
+
+    #room-3 {
+        position: absolute;
+
+        top: 0;
+        left: 381px;
+    }
+
+    #room-4 {
+        position: absolute;
+
+        top: 0;
+        left: 520px;
+    }
+
+    #room-5 {
+        position: absolute;
+
+        top: 0;
+        left: 655px;
+    }
+
+    #room-6 {
+        position: absolute;
+
+        top: 222px;
+        left: 105px;
+    }
+
+    #room-7 {
+        position: absolute;
+
+        top: 222px;
+        left: 243px;
+    }
+
+    #room-8 {
+        position: absolute;
+
+        top: 222px;
+        left: 520px;
+    }
+
+    #room-9 {
+        position: absolute;
+
+        top: 222px;
+        left: 657px;
+    }
+}
